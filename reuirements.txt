@@ -1,4 +1,0 @@
-#reuirments.txt
-#snowflake-connector-python
-#snowflake-snowpark-python 
-#pip install stremlit==1.31.1
