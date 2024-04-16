@@ -10,9 +10,8 @@ st. write(
 )
 name_of_order = st.text_input('name_of_smoothee')
 st.write('The Name of Smoothie :', name_of_order) 
-cx=st.connection("snowflake")
-session = cx.session()
-#get_active_session()
+cnx=st.connection("snowflake")
+session = cnx.session()
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('fruit_name'))
 
 #st.dataframe(data=my_dataframe, use_container_width=True)
