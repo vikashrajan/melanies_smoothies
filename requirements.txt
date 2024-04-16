@@ -1,4 +1,4 @@
 #reuirments.txt
 snowflake-connector-python
 snowflake-snowpark-python 
-stremlit==1.31.1
+stremlit==1.33.0
