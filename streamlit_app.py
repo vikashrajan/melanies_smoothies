@@ -12,7 +12,7 @@ st. write(
 
 name_of_order = st.text_input('name_of_smoothee')
 st.write('The Name of Smoothie :', name_of_order) 
-cnx=st.connection("snowflake)
+cnx=st.connection("snowflake")
 session = cnx.session()
 
 
