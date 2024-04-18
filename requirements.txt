@@ -1,5 +1,4 @@
 #reuirments.txt
-Python
 snowflake-connector-python
 snowflake-snowpark-python 
 streamlit==1.33.0
