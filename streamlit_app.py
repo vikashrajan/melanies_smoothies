@@ -2,7 +2,7 @@
 # Import python packages
 import streamlit as st
 from snowflake.snowpark.functions import col
-
+snowflake_config = st.secrets._file_paths=["~/melanies_smoothies/secrets.toml"]
 # Write directly to the app
 st.title(":cup_with_staw: Cup with straw:cup_with_staw:")
 
