@@ -2,5 +2,5 @@
 pip install Python 3.8
 pip install snowflake-connector-python
 pip install snowflake-snowpark-python 
-pip install stremlit==1.33.0
+pip install streamlit==1.33.0
 pip install requests
