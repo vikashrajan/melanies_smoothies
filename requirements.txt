@@ -1,5 +1,6 @@
 #reuirments.txt
-snowflake-connector-python
-snowflake-snowpark-python 
-streamlit==1.33.0
-requests
+pip install Python 3.8
+pip install snowflake-connector-python
+pip install snowflake-snowpark-python 
+pip install stremlit==1.33.0
+pip install requests
