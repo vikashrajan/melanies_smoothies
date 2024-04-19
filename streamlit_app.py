@@ -3,7 +3,7 @@ import streamlit as st
 from snowflake.snowpark.functions import col
 import snowflake.connector
 import requests
-snowflake_config = st.secrets._file_paths=["/workspaces/teststreamlite/secrets.toml"]
+snowflake_config = st.secrets._file_paths=["/workspaces/melanies_smoothies/secrets.toml"]
 
 st.title(":cup_with_staw: Cup with straw:cup_with_staw:")
 
@@ -12,11 +12,10 @@ st. write(
 )
 name_of_order = st.text_input('name_of_smoothee')
 st.write('The Name of Smoothie :', name_of_order) 
-try:
-    cnx=st.connection('snowflake')
-    session = cnx.session()
-except Exception as e:
-    st.error(f"An error occurred: {e}")
+ 
+cnx=st.connection('snowflake')
+session = cnx.session()
+ 
 
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('fruit_name'),col('search_on'))
 #st.dataframe(data=my_dataframe, use_container_width=True)
