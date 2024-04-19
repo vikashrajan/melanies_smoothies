@@ -1,11 +1,12 @@
+#orginal which run successfully in browser
 import streamlit as st
 from snowflake.snowpark.functions import col
 import snowflake.connector
 import requests
-snowflake_config = st.secrets._file_paths=["secrets.toml"]
+snowflake_config = st.secrets._file_paths=["/workspaces/teststreamlite/secrets.toml"]
 
 st.title(":cup_with_staw: Cup with straw:cup_with_staw:")
-a
+
 st. write(
     "Choose the fruit you want to custome smoothiekjjlkjjk"
 )
