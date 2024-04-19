@@ -2,7 +2,7 @@ import streamlit as st
 from snowflake.snowpark.functions import col
 import snowflake.connector
 import requests
-snowflake_config = st.secrets._file_paths=["/worakspaces/teststreamlite/secrets.toml"]
+snowflake_config = st.secrets._file_paths=["secrets.toml"]
 
 st.title(":cup_with_staw: Cup with straw:cup_with_staw:")
 a
